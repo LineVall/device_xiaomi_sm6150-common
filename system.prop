@@ -28,7 +28,6 @@ persist.vendor.radio.vdp_on_ims_cap=1
 persist.vendor.qti.telephony.vt_cam_interface=2
 ril.subscription.types=RUIM
 ro.telephony.default_cdma_sub=0
-ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
 # Recovery
