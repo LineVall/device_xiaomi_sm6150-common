@@ -6,3 +6,6 @@ allow init vendor_file:file execute;
 allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
 
 allow init sysfs_battery_supply:file { setattr };
+
+allow init sysfs_vibrator:dir search;
+allow init sysfs_vibrator:file rw_file_perms;
