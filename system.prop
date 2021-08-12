@@ -1,6 +1,9 @@
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 
+# Camera
+persist.vendor.qti.telephony.vt_cam_interface=2
+
 # Charger
 ro.charger.enable_suspend=true
 
