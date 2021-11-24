@@ -109,4 +109,9 @@
     <string name="audio">Audio</string>
     <string name="power">Battery Section</string>
     <string name="kprofile">KProfiles</string>
+
+    <!-- DC dimming settings -->
+    <string name="dc_dimming_enable_title">Anti-Flicker Mode</string>
+    <string name="dc_dimming_enable_summary">DC Dimming reduces eye strain in low light conditions (Note: reduce image quality and color production)</string>
+
 </resources>
