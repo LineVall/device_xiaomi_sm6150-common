@@ -54,6 +54,14 @@
         android:summary="%s"
         android:icon="@drawable/ic_scenes" />
 
+    <Preference 
+        android:key="dolby" 
+        android:title="@string/dolby">
+        <intent android:targetPackage="com.dolby.daxappui"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.dolby.daxappui.MainActivity"/>
+    </Preference>
+
     <Preference
         android:key="clear"
         android:title="@string/clear_speaker_title">

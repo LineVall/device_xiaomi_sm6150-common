@@ -103,6 +103,7 @@
     <string name="haptic_level_summary_incompatible">Feature not supported</string>
 
     <!-- Add Ons -->
+    <string name="dolby">Dolby Atmos™</string>
     <string name="audio">Audio</string>
     <string name="power">Battery Section</string>
     <string name="kprofile">KProfiles</string>
