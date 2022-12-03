@@ -10,3 +10,7 @@ get_prop(platform_app, vendor_audio_prop)
 
 allow platform_app vendor_hal_soter_hwservice:hwservice_manager find;
 binder_call(platform_app, vendor_hal_soter_qti)
+
+allow platform_app vendor_sysfs_battery_supply:dir search;
+allow platform_app vendor_sysfs_battery_supply:file r_file_perms;
+allow platform_app vendor_sysfs_kgsl:file r_file_perms;
