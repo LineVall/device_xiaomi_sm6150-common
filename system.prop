@@ -1,6 +1,11 @@
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 
+# Blur
+ro.launcher.blur.appLaunch=0
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+
 # Camera
 ro.miui.notch=1
 persist.vendor.qti.telephony.vt_cam_interface=2
@@ -36,6 +41,10 @@ ril.subscription.types=RUIM
 
 # Recovery
 ro.recovery.ui.margin_height=48
+
+# Spark Ify
+ro.spark.status=Official
+ro.spark.maintainer=Unsatifsed27
 
 # WiFi
 wifi.interface=wlan0
