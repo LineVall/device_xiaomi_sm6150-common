@@ -64,6 +64,14 @@
             android:targetPackage="org.lineageos.settings" />
         </Preference>
 
+    <Preference 
+        android:key="dolby" 
+        android:title="@string/dolby">
+        <intent android:targetPackage="com.dolby.daxappui"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.dolby.daxappui.MainActivity"/>
+    </Preference>
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -121,5 +129,4 @@
     </Preference>
 
     </PreferenceCategory>
-
 </PreferenceScreen>

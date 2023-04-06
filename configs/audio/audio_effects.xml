@@ -46,6 +46,8 @@
         <library name="spatializer" path="libspatialaudio.so"/>
         <!--ViPER4Android FX-->
         <library name="v4a_fx" path="libv4a_fx.so"/>
+        <!--DOLBY DAP-->
+        <library name="dolbyatmos" path="libatmos.so"/>
     </libraries>
     <effects>
         <effectProxy name="bassboost" library="proxy" uuid="14804144-a5ee-4d24-aa88-0002a5d5c51b">
@@ -98,22 +100,21 @@
         <effect name="spatializer" library="spatializer" uuid="cc4677de-ff72-11eb-9a03-0242ac130003"/>
         <!--ViPER4Android FX-->
         <effect name="v4a_standard_fx" library="v4a_fx" uuid="41d3c987-e6cf-11e3-a88a-11aba5d5c51b"/>
+        <!--DOLBY DAP-->
+        <effect name="dolbyatmos" library="dolbyatmos" uuid="74697567-7261-6564-6864-65726f206678"/>
     </effects>
     <postprocess>
+        <stream type="system">
+        </stream>
         <stream type="music">
-            <apply effect="music_helper"/>
         </stream>
         <stream type="ring">
-            <apply effect="ring_helper"/>
         </stream>
         <stream type="alarm">
-            <apply effect="alarm_helper"/>
         </stream>
         <stream type="voice_call">
-            <apply effect="voice_helper"/>
         </stream>
         <stream type="notification">
-            <apply effect="notification_helper"/>
         </stream>
     </postprocess>
     <preprocess>
