@@ -22,9 +22,9 @@
     <string name="doze_brightness_summary">%s mode is enabled</string>
 
     <!-- Dirac settings -->
-    <string name="dirac_title">Mi Sound Enhancer</string>
+    <string name="dirac_title">Xiaomi Parts</string>
     <string name="dirac_enable">Enable</string>
-    <string name="dirac_summary">Optimize audio quality</string>
+    <string name="dirac_summary">Customized for xiaomi parts</string>
     <string name="dirac_headset_title">Choose headphones type</string>
     <string name="dirac_preset_title">Choose a preset</string>
 
@@ -104,4 +104,9 @@
 
     <!-- Refresh Rate tile -->
     <string name="refresh_rate_tile_title">Refresh Rate</string>
+
+    <!-- Add Ons -->
+    <string name="audio">Audio</string>
+    <string name="power">Battery Section</string>
+    <string name="kprofile">KProfiles</string>
 </resources>
