@@ -71,9 +71,11 @@
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.sound" />
+                       android:value="com.android.settings.category.ia.homepage" />
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/dirac_summary" />
+            <meta-data android:name="com.android.settings.icon"
+                       android:resource="@drawable/ic_main_settings" />
         </activity>
 
         <activity
@@ -82,17 +84,9 @@
             android:icon="@drawable/ic_thermal_settings"
             android:theme="@style/Theme.SubSettingsBase_v31">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.system" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/thermal_summary" />
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_thermal_settings" />
         </activity>
 
         <activity
@@ -100,10 +94,9 @@
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.sound" />
         </activity>
 
         <service
@@ -127,12 +120,9 @@
             android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.sound" />
-            <meta-data android:name="com.android.settings.summary"
-                       android:resource="@string/haptic_summary" />
         </activity>
 
     </application>
