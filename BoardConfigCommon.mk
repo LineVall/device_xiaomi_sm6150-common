@@ -94,6 +94,12 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_CONFIG := sweet_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
 
+TARGET_KERNEL_CLANG_VERSION := banana
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(TARGET_KERNEL_CLANG_PATH)/bin/aarch64-linux-gnu-
+CROSS_COMPILE := $(TARGET_KERNEL_CLANG_PATH)/bin/aarch64-linux-gnu-
+CROSS_COMPILE_ARM32 := $(TARGET_KERNEL_CLANG_PATH)/bin/arm-linux-gnueabi-
+
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
