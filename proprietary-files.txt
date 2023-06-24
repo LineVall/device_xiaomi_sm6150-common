@@ -56,8 +56,8 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 # ANT+
 -vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio FX modules - from cheetah TQ2A.230305.008.C1
-vendor/lib/soundfx/libspatialaudio.so|379b98b020729d05cad4e84202f42335b96bb755
+# Audio FX modules - from cheetah-tq3a.230605.012
+vendor/lib/soundfx/libspatialaudio.so|b26727b8887dad56f5e183f7145487c88bd2f065
 
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
