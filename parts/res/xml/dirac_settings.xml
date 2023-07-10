@@ -100,6 +100,16 @@
             android:targetPackage="org.lineageos.settings" />
     </Preference>
 
+    <Preference
+        android:key="doze"
+        android:title="@string/ambient_display_title">
+
+        <intent
+            android:action="android.intent.action.MAIN" 
+            android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"
+            android:targetPackage="org.lineageos.settings" />
+    </Preference>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
