@@ -94,6 +94,7 @@ TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/sweet_perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
+KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
 KERNEL_LD := LD=ld.lld
 
