@@ -110,6 +110,16 @@
             android:targetPackage="org.lineageos.settings" />
     </Preference>
 
+<Preference
+        android:key="hbm"
+        android:title="@string/display_settings_title">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.lineageos.settings.display.DisplaySettingsActivity"
+            android:targetPackage="org.lineageos.settings"/>
+    </Preference>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
