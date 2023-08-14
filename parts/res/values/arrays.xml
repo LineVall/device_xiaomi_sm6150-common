@@ -125,4 +125,17 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <!-- Refresh Rate -->
+    <string-array name="device_refresh_rates">
+        <item>60 Hz - 60 Hz</item>
+        <item>60 Hz - 120 Hz</item>
+        <item>120 Hz - 120 Hz</item>
+    </string-array>
+    <string-array name="device_refresh_rates_val">
+        <item>60-60</item>
+        <item>60-120</item>
+        <item>120-120</item>
+    </string-array>
+
 </resources>

@@ -23,6 +23,13 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.util.Log;
 
+import android.content.ComponentName;
+import android.content.pm.PackageManager;
+import android.os.Handler;
+
+import org.lineageos.settings.Constants;
+import org.lineageos.settings.utils.DisplayUtils;
+
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
@@ -57,6 +64,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Haptic
         HapticUtils.restoreLevel(context);
+
+        // Dynamic Refresh Rate
+        DisplayUtils.updateRefreshRateSettings(context);
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 

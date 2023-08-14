@@ -145,6 +145,16 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".refreshrate.RefreshRateSettingsActivity"
+            android:label="@string/refresh_rate_tile_title"
+            android:theme="@style/DeviceSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
 

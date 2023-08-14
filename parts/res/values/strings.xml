@@ -14,7 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Ambient settings -->
     <string name="ambient_enable">Use ambient display</string>
 
@@ -102,14 +102,12 @@
     <string name="haptic_level_summary">Amount of vibration intensity</string>
     <string name="haptic_level_summary_incompatible">Feature not supported</string>
 
-    <!-- Refresh Rate tile -->
-    <string name="refresh_rate_tile_title">Refresh Rate</string>
-
     <!-- Add Ons -->
     <string name="dolby">Dolby Atmos™</string>
     <string name="audio">Audio</string>
     <string name="power">Battery Section</string>
     <string name="kprofile">KProfiles</string>
+    <string name="add">Add Ons</string>
 
     <!-- DC dimming settings -->
     <string name="dc_dimming_enable_title">Anti-Flicker Mode</string>
@@ -124,5 +122,13 @@
     <string name="hbm_mode_title">High Brightness Mode</string>
     <string name="hbm_mode_summary">High Brightness Mode allows the display panel brightness to go above the maximum stock value. Which helps in improving visibility in direct sunlight</string>
     <string name="hbm_enable_summary_not_supported">HBM is not currently supported by the kernel</string>
+
+    <!-- Refresh Rate tile -->
+    <string name="refresh_rate_tile_title">Refresh Rate</string>
+    <string name="refresh_rate_title">Dynamic Refresh rate</string>
+    <string name="refresh_rate_summary">Change your device\'s display refresh rate for a better experience</string>
+    <string name="enable_high_refresh_rate_title">High refresh rate</string>
+    <string name="enable_high_refresh_rate_summary">Enable high refresh rate for a smoother experience</string>
+    <string name="current_refresh_rate_info">Maximum / minimum refresh rate: <xliff:g id="version">%1$s</xliff:g>Hz - <xliff:g id="version">%2$s</xliff:g>Hz</string>
 
 </resources>

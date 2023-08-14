@@ -18,6 +18,30 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/dirac_title">
 
+<PreferenceCategory
+        android:title="@string/add">
+
+    <Preference
+        android:title="@string/refresh_rate_title">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.lineageos.settings.refreshrate.RefreshRateSettingsActivity"
+            android:targetPackage="org.lineageos.settings" />
+    </Preference>
+
+    <Preference
+        android:key="heptic"
+        android:title="@string/haptic_title">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.lineageos.settings.haptic.HapticLevelActivity"
+            android:targetPackage="org.lineageos.settings" />
+    </Preference>
+
+</PreferenceCategory>
+
     <PreferenceCategory
         android:key="audio"
         android:title="@string/audio">
@@ -96,16 +120,6 @@
             android:action="android.intent.action.MAIN"
             android:targetClass="com.android.kprofiles.battery.KprofilesSettingsActivity"
             android:targetPackage="com.android.kprofiles" />
-    </Preference>
-
-    <Preference
-        android:key="heptic"
-        android:title="@string/haptic_title">
-
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="org.lineageos.settings.haptic.HapticLevelActivity"
-            android:targetPackage="org.lineageos.settings" />
     </Preference>
 
     <Preference
