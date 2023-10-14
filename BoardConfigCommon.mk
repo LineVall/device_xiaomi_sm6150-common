@@ -92,7 +92,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_RAMDISK_USE_LZ4 := true
 
-TARGET_KERNEL_CONFIG := sweet_defconfig
+TARGET_KERNEL_CONFIG := vendor/sweet_perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000
