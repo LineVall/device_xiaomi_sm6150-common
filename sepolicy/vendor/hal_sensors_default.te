@@ -5,3 +5,5 @@ allow hal_sensors_default audio_socket:sock_file rw_file_perms;
 
 get_prop(hal_sensors_default, persist_sensors_prop)
 get_prop(hal_sensors_default, vendor_adsprpc_prop)
+
+set_prop(hal_sensors_default, nfc_sensors_prop)
