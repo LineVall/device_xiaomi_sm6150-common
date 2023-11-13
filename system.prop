@@ -5,9 +5,6 @@ vendor.bluetooth.soc=cherokee
 ro.miui.notch=1
 persist.vendor.qti.telephony.vt_cam_interface=2
 
-# Charger
-ro.charger.enable_suspend=true
-
 # CNE
 persist.vendor.cne.feature=1
 
